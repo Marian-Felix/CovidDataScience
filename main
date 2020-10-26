@@ -1,3 +1,8 @@
+# data from https://ourworldindata.org/covid-cases#what-is-the-daily-number-of-confirmed-cases
+
 import numpy as np
 import pandas as pd
 
+df_covidGlobal = pd.read_csv("covid_data_global.csv", delimiter=",", header="infer")
+for col in df_covidGlobal.columns:
+	print(col)
